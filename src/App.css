@@ -1,5 +1,6 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
 }
 
 section {
@@ -7,13 +8,15 @@ section {
 }
 
 .section--home {
-  background-color: #66BFBF;
+  background-color: #2A9D8F;
 }
 
 .section--about {
-  background-color: #FF0063
+  background-color: #E9C46A;
 }
 
 .section--projects {
-  background-color: #EAF6F6;
+  background-color: #F4A261;
 }
+
+/*# sourceMappingURL=App.css.map */

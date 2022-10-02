@@ -1,0 +1,26 @@
+$blue: #264653;
+$teal: #2A9D8F;
+$yellow: #E9C46A;
+$orange: #F4A261;
+$red: #E76F51;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  height: 100vh;
+}
+
+.section--home {
+  background-color: $teal;
+}
+
+.section--about {
+  background-color: $yellow;
+}
+
+.section--projects {
+  background-color: $orange;
+}
