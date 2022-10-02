@@ -10,19 +10,31 @@ export default function Header({ showMenu, setShowMenu }) {
       <a>About</a>
       <a>Projects</a>
       <a>Contact</a>
-      <GitHubIcon />
-      <LinkedInIcon />
+      <div className="header--dropdown--icons">
+        <GitHubIcon fontSize="large" />
+        <LinkedInIcon fontSize="large" />
+      </div>
     </div>
   )
 
   const topMenu = (
     <div className="header--top">
       <div className="header--left">
-        <p>&lt;JL></p>
+        <h3>&lt;JL></h3>
       </div>
-      <div className="header--right">{showMenu ? <CloseIcon /> : <MenuIcon />}</div>
+      <div className="header--right">
+        {showMenu ? (
+          <CloseIcon fontSize="large" onClick={() => toggleMenu()} />
+        ) : (
+          <MenuIcon fontSize="large" onClick={() => toggleMenu()} />
+        )}
+      </div>
     </div>
   )
+
+  const toggleMenu = () => {
+    setShowMenu(!showMenu)
+  }
 
   return (
     <div className="header--div">

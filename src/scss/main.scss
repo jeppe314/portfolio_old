@@ -6,6 +6,8 @@ $yellow: #e9c46a;
 $orange: #f4a261;
 $red: #e76f51;
 
+$heading1: 32px;
+
 * {
   margin: 0;
   padding: 0;
@@ -14,6 +16,11 @@ $red: #e76f51;
 body {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
+}
+
+.App {
+  display: flex;
+  flex-direction:column;
 }
 
 .header--div {
@@ -32,21 +39,28 @@ body {
 }
 
 .header--top div {
-  padding: .8em;
+  padding: 1rem 1rem 0rem;
 }
 
 .header--dropdown {
   width: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items:center;
-  gap: .5em;
+  align-items: flex-end;
+  gap: 1em;
+  font-size: 1.5em;
+  padding: 1em 2.5em 0 0;
+}
 
+.header--dropdown--icons {
+  display: flex;
+  gap: .5em;
 }
 
 .header--left {
   font-family: "Roboto Condensed";
-  font-size:1.4em;
+  font-size: 1.4em;
 }
 
 .header--right {
@@ -55,6 +69,7 @@ body {
   flex-wrap: wrap;
   gap: 0.2em;
 }
+
 section {
   height: 100vh;
   display: flex;

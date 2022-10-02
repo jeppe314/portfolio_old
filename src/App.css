@@ -9,6 +9,11 @@ body {
   font-weight: 700;
 }
 
+.App {
+  display: flex;
+  flex-direction: column;
+}
+
 .header--div {
   width: 100%;
   position: fixed;
@@ -25,14 +30,22 @@ body {
 }
 
 .header--top div {
-  padding: 0.8em;
+  padding: 1rem 1rem 0rem;
 }
 
 .header--dropdown {
   width: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
+  gap: 1em;
+  font-size: 1.5em;
+  padding: 1em 2.5em 0 0;
+}
+
+.header--dropdown--icons {
+  display: flex;
   gap: 0.5em;
 }
 
