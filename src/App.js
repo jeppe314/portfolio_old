@@ -7,7 +7,7 @@ import Header from "./components/Header"
 import { useState } from "react"
 
 function App() {
-  const [showMenu, setShowMenu] = useState(false)
+  const [showMenu, setShowMenu] = useState(true)
 
   return (
     <div className="App">
