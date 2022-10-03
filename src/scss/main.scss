@@ -13,14 +13,32 @@ $heading1: 32px;
   padding: 0;
 }
 
+html {
+}
+
 body {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
+  overflow-y: hidden;
 }
 
 .App {
   display: flex;
-  flex-direction:column;
+  flex-direction: column;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+  height: 100vh;
+  overflow-y: scroll;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.App::-webkit-scrollbar {
+  display: none;
+}
+
+.container {
+  scroll-snap-align: center;
 }
 
 .header--div {
@@ -33,34 +51,28 @@ body {
 }
 
 .header--top {
-  width: 100%;
+  width: 90%;
+  margin: 1em 0;
   display: flex;
   justify-content: space-between;
 }
 
-.header--top div {
-  padding: 1rem 1rem 0rem;
-}
-
 .header--dropdown {
-  width: 100%;
+  width: 90%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-end;
   gap: 1em;
-  font-size: 1.5em;
-  padding: 1em 2.5em 0 0;
 }
 
 .header--dropdown--icons {
   display: flex;
-  gap: .5em;
+  gap: 0.5em;
 }
 
 .header--left {
   font-family: "Roboto Condensed";
-  font-size: 1.4em;
 }
 
 .header--right {
@@ -77,10 +89,28 @@ section {
   align-items: center;
   justify-content: center;
   text-align: center;
+  scroll-snap-align: center;
 }
 
 .section--home {
   background-color: $teal;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.section--home--avatar--div {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.avatar-crouching {
+  height: 100%;
+  margin-left: 3em;
+}
+
+.section--home--title {
+  text-align: left;
 }
 
 .section--about {

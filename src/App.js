@@ -11,10 +11,12 @@ function App() {
 
   return (
     <div className="App">
-      <Header showMenu={showMenu} setShowMenu={setShowMenu}/>
-      <Home />
-      <About />
-      <Projects />
+      <div className="container">
+        <Header showMenu={showMenu} setShowMenu={setShowMenu} />
+        <Home className="home" />
+        <About className="about" />
+        <Projects className="projects" />
+      </div>
     </div>
   )
 }

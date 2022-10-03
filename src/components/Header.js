@@ -11,8 +11,8 @@ export default function Header({ showMenu, setShowMenu }) {
       <a>Projects</a>
       <a>Contact</a>
       <div className="header--dropdown--icons">
-        <GitHubIcon fontSize="large" />
-        <LinkedInIcon fontSize="large" />
+        <GitHubIcon fontSize="medium" />
+        <LinkedInIcon fontSize="medium" />
       </div>
     </div>
   )
@@ -24,9 +24,9 @@ export default function Header({ showMenu, setShowMenu }) {
       </div>
       <div className="header--right">
         {showMenu ? (
-          <CloseIcon fontSize="large" onClick={() => toggleMenu()} />
+          <CloseIcon fontSize="medium" onClick={() => toggleMenu()} />
         ) : (
-          <MenuIcon fontSize="large" onClick={() => toggleMenu()} />
+          <MenuIcon fontSize="medium" onClick={() => toggleMenu()} />
         )}
       </div>
     </div>
