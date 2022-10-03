@@ -1,15 +1,19 @@
 import React from "react"
-import Avatar from "../assets/avatars/Avatar.js"
+import avatar_standing_happy from "../assets/avatars/avatar_standing_happy.svg"
+import Title from "../components/Title.js"
 
 export default function Home() {
   return (
     <section className="section--home">
-      <div className="section--home--title">
-        <h1>Hi,</h1>
-        <h2>I'm Jesper</h2>
-      </div>
-      <div className="section--home--avatar--div">
-        <Avatar className="home--avatar" />
+      <Title title="1. welcome" />
+      <div className="section--home--svgs">
+        <img
+          className="home--avatar"
+          x="10"
+          src={avatar_standing_happy}
+          width="180"
+          alt="Happy avatar"
+        />
       </div>
     </section>
   )
