@@ -1,23 +1,26 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Roboto:wght@400;500;700&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Roboto:wght@400;500;700&family=Space+Mono:wght@400;700&display=swap");
 $blue: #264653;
 $teal: #2a9d8f;
 $yellow: #e9c46a;
 $orange: #f4a261;
 $red: #e76f51;
-
-$heading1: 32px;
+$purple: #6c6ae9;
+$green: #6ae979;
 
 * {
   margin: 0;
   padding: 0;
 }
 
-html {
+h1 {
+  font-size: 10vw;
+}
+h2 {
+  font-size: 3vw;
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Space Mono", "Roboto", sans-serif;
   font-weight: 700;
   overflow-y: hidden;
 }
@@ -37,22 +40,13 @@ body {
   display: none;
 }
 
-.container {
-  scroll-snap-align: center;
-}
-
 .header--div {
   width: 100%;
   position: fixed;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
 }
 
 .header--top {
-  width: 90%;
-  margin: 1em 0;
+  margin: 1em;
   display: flex;
   justify-content: space-between;
 }
@@ -71,10 +65,6 @@ body {
   gap: 0.5em;
 }
 
-.header--left {
-  font-family: "Roboto Condensed";
-}
-
 .header--right {
   display: flex;
   align-items: center;
@@ -83,40 +73,55 @@ body {
 }
 
 section {
-  height: 100vh;
+  height: calc(100vh - 6em);
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
+  padding: 3em 1em;
   scroll-snap-align: center;
 }
 
 .section--home {
   background-color: $teal;
-  display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
 }
 
-.section--home--avatar--div {
+.title {
+  margin-left: 1.5em;
+}
+
+.section--home--svgs {
   width: 100%;
-  display: flex;
-  justify-content: flex-start;
+  border: 2px solid black;
 }
 
-.avatar-crouching {
-  height: 100%;
-  margin-left: 3em;
+.section--home--svgs img {
+  border: 4px solid blue;
 }
 
-.section--home--title {
-  text-align: left;
+.home--avatar {
+}
+
+.home--bubble {
 }
 
 .section--about {
-  background-color: $yellow;
+  background-color: $purple;
+}
+
+.tech-stack {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+  grid-gap: 1em;
 }
 
 .section--projects {
   background-color: $orange;
+  justify-content: center;
+  align-items: center;
+}
+
+.section--contact {
+  background-color: $blue;
 }

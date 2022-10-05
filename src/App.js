@@ -3,6 +3,7 @@ import "./App.css"
 import Home from "./pages/Home.js"
 import About from "./pages/About.js"
 import Projects from "./pages/Projects.js"
+import Contact from "./pages/Contact.js"
 import Header from "./components/Header"
 import { useState } from "react"
 
@@ -16,6 +17,7 @@ function App() {
         <Home className="home" />
         <About className="about" />
         <Projects className="projects" />
+        <Contact className="contact" />
       </div>
     </div>
   )
