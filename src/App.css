@@ -73,6 +73,12 @@ section {
   scroll-snap-align: center;
 }
 
+.section--loading {
+  background-color: #26262D;
+  align-items: center;
+  justify-content: center;
+}
+
 .section--home {
   background-color: #2a9d8f;
   justify-content: space-between;

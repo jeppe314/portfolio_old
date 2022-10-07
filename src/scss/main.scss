@@ -80,6 +80,12 @@ section {
   scroll-snap-align: center;
 }
 
+.section--loading {
+  background-color: #26262D;
+  align-items:center;
+  justify-content: center;
+}
+
 .section--home {
   background-color: $teal;
   justify-content: space-between;

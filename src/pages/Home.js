@@ -6,15 +6,6 @@ export default function Home() {
   return (
     <section className="section--home">
       <Title title="1. welcome" />
-      <div className="section--home--svgs">
-        <img
-          className="home--avatar"
-          x="10"
-          src={avatar_standing_happy}
-          width="180"
-          alt="Happy avatar"
-        />
-      </div>
     </section>
   )
 }
