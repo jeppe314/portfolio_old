@@ -2,16 +2,16 @@ import React from "react"
 
 export default function Hexagon() {
   return (
-    <svg
+    <svg id="hexagon--box"
       width="149"
       height="149"
       viewBox="0 0 149 149"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <g id="JL Hexagon">
+      <g id="JL--Hexagon">
         <path
-          id="path1425"
+          id="hexagon--shape"
           d="M114.716 100.482L74.1884 123.881L33.6605 100.482V53.6844L74.1884 30.2856L114.716 53.6844V100.482Z"
           fill="#B927C6"
           stroke="#1D4468"

@@ -13,12 +13,12 @@ function App() {
   const [loading, setLoading] = useState(true)
 
   useEffect(() => {
-    setTimeout(() => setLoading(false), 3000)
+    setTimeout(() => setLoading(false), 3700)
   }, [])
 
-
-  return (
-    loading ? <Loading /> :
+  return loading ? (
+    <Loading />
+  ) : (
     <div className="App">
       <div className="container">
         <Header showMenu={showMenu} setShowMenu={setShowMenu} />

@@ -6,6 +6,7 @@ $orange: #f4a261;
 $red: #e76f51;
 $purple: #6c6ae9;
 $green: #6ae979;
+$darkgray: #26262d;
 
 * {
   margin: 0;
@@ -43,6 +44,7 @@ body {
 .header--div {
   width: 100%;
   position: fixed;
+  animation: appear 1s;
 }
 
 .header--top {
@@ -81,13 +83,36 @@ section {
 }
 
 .section--loading {
-  background-color: #26262D;
-  align-items:center;
+  background-color: $darkgray;
+  align-items: center;
   justify-content: center;
 }
 
+#hexagon--box {
+  animation: getOut 0.5s 3000ms ease-in;
+  animation-fill-mode: forwards;
+}
+
+#JL--Hexagon {
+  animation: scale 1s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+#hexagon--shape {
+  animation-name: spin;
+  animation-duration: 2000ms;
+  animation-delay: 1000ms;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
 .section--home {
-  background-color: $teal;
+  background-color: $darkgray;
   justify-content: space-between;
 }
 
@@ -130,4 +155,47 @@ section {
 
 .section--contact {
   background-color: $blue;
+}
+
+/*ANIMATION KEYFRAMES*/
+
+@keyframes scale {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes getOut {
+  0% {
+    transform: translateX(0);
+  }
+
+  40% {
+    transform: translateX(-10vw);
+  }
+
+  100% {
+    transform: translateX(60vw);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(720deg);
+  }
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
