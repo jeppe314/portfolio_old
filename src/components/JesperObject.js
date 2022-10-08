@@ -9,7 +9,7 @@ export default function JesperObject() {
         <p>
           <span className="lightblue">const </span>
           developer =
-          <span style={{ color: "pink" }}>
+          <span className="pink">
             &#123;
             <br />
             &#125;
@@ -29,6 +29,8 @@ export default function JesperObject() {
           <span className="string">"Programming"</span>, <span className="string">"Sports"</span>,{" "}
           <span className="string">"Reading"</span>, <span className="string">"Photography"</span>
           <span className="lightblue">]</span>
+          <br />
+          <span className="pink">&#125;</span>
         </p>
       </Typist>
     </div>

@@ -164,6 +164,12 @@ section:nth-child(2n+2) {
 .typist--container {
   background-color: #262C33;
   color: white;
+  padding: 1em;
+  height: 40vh;
+}
+
+.pink {
+  color: #fc00f2;
 }
 
 .lightblue {
