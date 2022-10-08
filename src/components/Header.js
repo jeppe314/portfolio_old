@@ -7,18 +7,17 @@ import CloseIcon from "@mui/icons-material/Close"
 export default function Header({ showMenu, setShowMenu }) {
   const dropDownEl = (
     <div className="header--dropdown">
+      <a>Home</a>
       <a>About</a>
       <a>Projects</a>
       <a>Contact</a>
-      <div className="header--dropdown--icons">
-        <GitHubIcon fontSize="medium" />
-        <LinkedInIcon fontSize="medium" />
-      </div>
+      <GitHubIcon className="header--dropdown--icon" fontSize="medium" />
+      <LinkedInIcon className="header--dropdown--icon" fontSize="medium" />
     </div>
   )
 
   const topMenu = (
-    <div className="header--top">
+    <header>
       <div className="header--left">
         <h3>&lt;JL></h3>
       </div>
@@ -29,7 +28,7 @@ export default function Header({ showMenu, setShowMenu }) {
           <MenuIcon fontSize="medium" onClick={() => toggleMenu()} />
         )}
       </div>
-    </div>
+    </header>
   )
 
   const toggleMenu = () => {
@@ -37,7 +36,7 @@ export default function Header({ showMenu, setShowMenu }) {
   }
 
   return (
-    <div className="header--div">
+    <div className="header--wrapper">
       {topMenu}
       {showMenu && dropDownEl}
     </div>
