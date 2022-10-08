@@ -9,8 +9,9 @@ import Header from "./components/Header"
 import { useState, useEffect } from "react"
 
 function App() {
+
   const [showMenu, setShowMenu] = useState(false)
-  const [loading, setLoading] = useState(false)
+  const [loading, setLoading] = useState(true)
 
   useEffect(() => {
     setTimeout(() => setLoading(false), 3700)
@@ -29,6 +30,12 @@ function App() {
       </div>
     </div>
   )
+}
+
+const jeppe = {
+  kalle: "Charles",
+  age: 28,
+  
 }
 
 export default App

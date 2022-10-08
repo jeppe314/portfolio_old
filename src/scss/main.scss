@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Roboto:wght@400;500;700&family=Space+Mono:wght@400;700&display=swap");
 $blue: #264653;
+$lightblue: #3E99EC;
 $teal: #2a9d8f;
 $yellow: #e9c46a;
 $orange: #f4a261;
@@ -8,6 +9,8 @@ $purple: #6c6ae9;
 $green: #6ae979;
 $darkgray: #26262d;
 $pink: #fc00f2;
+$stringorange: #D87832;
+$intgreen: #C5F478;
 
 * {
   margin: 0;
@@ -98,7 +101,7 @@ section {
   background-color: $pink;
   display: flex;
   flex-direction: column;
-  padding: 3em 1em;
+  padding: 3em 0;
   scroll-snap-align: center;
 }
 
@@ -140,7 +143,7 @@ section:nth-child(2n + 2) {
 }
 
 .title {
-  margin: 1.5em 0 1em 1.5em;
+  padding: 1.5em 0 1em 1.5em;
 }
 
 .section--home--svgs {
@@ -159,6 +162,27 @@ section:nth-child(2n + 2) {
 }
 
 .section--about {
+}
+
+.typist--container {
+  background-color: #262C33;
+  color: white;
+}
+
+// .type--animation--row {
+//   display:flex;
+//   gap: .5em;
+// }
+.lightblue {
+  color: $lightblue;
+}
+
+.int {
+  color: $intgreen;
+}
+
+.string {
+  color: $stringorange;
 }
 
 .tech-stack {
