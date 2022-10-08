@@ -47,8 +47,7 @@ body {
 }
 
 header {
-  margin: 1em 0 0 1em;
-  width: 90%;
+  padding: 1em 1em 0 1em;
   display: flex;
   justify-content: space-between;
 }
@@ -61,8 +60,39 @@ header {
   gap: 1em;
 }
 
+.header--dropdown * {
+  animation: appear 0.2s ease-in;
+  opacity: 0;
+  animation-fill-mode: forwards;
+  cursor: pointer;
+}
+
 .header--dropdown--icon {
   transform: scale(0.7);
+}
+
+.header--dropdown *:nth-child(1n) {
+  animation-delay: 0.1s;
+}
+
+.header--dropdown *:nth-child(2n) {
+  animation-delay: 0.2s;
+}
+
+.header--dropdown *:nth-child(3n) {
+  animation-delay: 0.3s;
+}
+
+.header--dropdown *:nth-child(4n) {
+  animation-delay: 0.4s;
+}
+
+.header--dropdown *:nth-child(5n) {
+  animation-delay: 0.5s;
+}
+
+.header--dropdown *:nth-child(6n) {
+  animation-delay: 0.6s;
 }
 
 .header--right {

@@ -10,7 +10,7 @@ import { useState, useEffect } from "react"
 
 function App() {
   const [showMenu, setShowMenu] = useState(false)
-  const [loading, setLoading] = useState(true)
+  const [loading, setLoading] = useState(false)
 
   useEffect(() => {
     setTimeout(() => setLoading(false), 3700)
