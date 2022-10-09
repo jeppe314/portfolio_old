@@ -39,11 +39,11 @@ body {
   display: flex;
   flex-direction: column;
   scroll-snap-type: y mandatory;
-  scroll-behavior: smooth;
+  // scroll-behavior: smooth;
   height: 100vh;
   overflow-y: scroll;
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
+  // -ms-overflow-style: none; /* IE and Edge */
+  // scrollbar-width: none; /* Firefox */
 }
 
 .App::-webkit-scrollbar {
@@ -170,10 +170,6 @@ section:nth-child(2n + 2) {
   padding: 1em;
 }
 
-// .type--animation--row {
-//   display:flex;
-//   gap: .5em;
-// }
 .pink {
   color: $pink;
 }

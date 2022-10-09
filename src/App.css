@@ -27,11 +27,8 @@ body {
   display: flex;
   flex-direction: column;
   scroll-snap-type: y mandatory;
-  scroll-behavior: smooth;
   height: 100vh;
   overflow-y: scroll;
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
 }
 
 .App::-webkit-scrollbar {
