@@ -10,27 +10,18 @@ import { useState, useEffect, useRef } from "react"
 import { nanoid } from "nanoid"
 
 function App() {
-  const [showMenu, setShowMenu] = useState(false)
   const [loading, setLoading] = useState(false)
 
   useEffect(() => {
     setTimeout(() => setLoading(false), 3700)
   }, [])
 
-  // const scroll = () => {
-  //   const about = document.querySelector(".section--about")
-  //   const aboutY = about.getBoundingClientRect().y
-  //   if (aboutY === 0) {
-  //     setShowTypist(true)
-  //   } else setShowTypist(false)
-  // }
-
   return loading ? (
     <Loading />
   ) : (
     <div className="App">
       <div className="container">
-        <Header showMenu={showMenu} setShowMenu={setShowMenu} />
+        <Header />
         <Home className="home" key={nanoid()} />
         <About className="about" key={nanoid()} />
         <Projects className="projects" key={nanoid()} />
