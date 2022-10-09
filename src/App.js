@@ -17,30 +17,22 @@ function App() {
     setTimeout(() => setLoading(false), 3700)
   }, [])
 
-  const [showTypist, setShowTypist] = useState(false)
-
-  const scroll = () => {
-    const about = document.querySelector(".section--about")
-    const aboutY = about.getBoundingClientRect().y
-    if (aboutY === 0) {
-      setShowTypist(true)
-    } else setShowTypist(false)
-  }
-
-
-
-  useEffect(() => {
-    console.log(showTypist)
-  }, [showTypist])
+  // const scroll = () => {
+  //   const about = document.querySelector(".section--about")
+  //   const aboutY = about.getBoundingClientRect().y
+  //   if (aboutY === 0) {
+  //     setShowTypist(true)
+  //   } else setShowTypist(false)
+  // }
 
   return loading ? (
     <Loading />
   ) : (
-    <div className="App" onScroll={(e) => scroll()}>
+    <div className="App">
       <div className="container">
         <Header showMenu={showMenu} setShowMenu={setShowMenu} />
         <Home className="home" key={nanoid()} />
-        <About className="about" key={nanoid()} showTypist={showTypist}/>
+        <About className="about" key={nanoid()} />
         <Projects className="projects" key={nanoid()} />
         <Contact className="contact" key={nanoid()} />
       </div>

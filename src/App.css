@@ -6,7 +6,8 @@
 
 html,
 body {
-  background-color: #fff;
+  background-color: #26262d;
+  color: #3E99EC;
 }
 
 h1 {
@@ -27,8 +28,11 @@ body {
   display: flex;
   flex-direction: column;
   scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
   height: 100vh;
   overflow-y: scroll;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
 
 .App::-webkit-scrollbar {
@@ -39,8 +43,6 @@ body {
   width: 100%;
   position: fixed;
   animation: appear 1s;
-  mix-blend-mode: difference;
-  color: #fc00f2;
 }
 
 header {
@@ -101,15 +103,11 @@ header {
 
 section {
   height: calc(100vh - 6em);
-  background-color: #fc00f2;
+  background-color: #26262d;
   display: flex;
   flex-direction: column;
   padding: 3em 0;
   scroll-snap-align: center;
-}
-
-section:nth-child(2n+2) {
-  background-color: #26262d;
 }
 
 .section--loading {
@@ -159,9 +157,12 @@ section:nth-child(2n+2) {
 }
 
 .typist--container {
-  background-color: #262C33;
   color: white;
   padding: 1em;
+}
+
+.typist--indented {
+  margin-left: 1em;
 }
 
 .pink {

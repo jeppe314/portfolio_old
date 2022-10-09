@@ -5,7 +5,8 @@ TODO:
 -Smooth scroll
 -Next page appears on scroll
 - Typing effect on some things (context / custom hook ?)
-- Animate dropdown menu
+- Animate dropdown menu CHECK
+- Make dropdown menu disappear after certain amount of time
 
 HEADER:
 

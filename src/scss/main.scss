@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Roboto:wght@400;500;700&family=Space+Mono:wght@400;700&display=swap");
 $blue: #264653;
 $lightblue: #3E99EC;
-$teal: #2a9d8f;
+$teal: #12d5be;
 $yellow: #e9c46a;
 $orange: #f4a261;
 $red: #e76f51;
@@ -11,6 +11,7 @@ $darkgray: #26262d;
 $pink: #fc00f2;
 $stringorange: #D87832;
 $intgreen: #C5F478;
+$gold: #b2a12a;
 
 * {
   margin: 0;
@@ -19,7 +20,8 @@ $intgreen: #C5F478;
 
 html,
 body {
-  background-color: #fff;
+  background-color: $darkgray;
+  color: $lightblue;
 }
 
 h1 {
@@ -39,11 +41,11 @@ body {
   display: flex;
   flex-direction: column;
   scroll-snap-type: y mandatory;
-  // scroll-behavior: smooth;
+  scroll-behavior: smooth;
   height: 100vh;
   overflow-y: scroll;
-  // -ms-overflow-style: none; /* IE and Edge */
-  // scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
 
 .App::-webkit-scrollbar {
@@ -54,8 +56,7 @@ body {
   width: 100%;
   position: fixed;
   animation: appear 1s;
-  mix-blend-mode: difference;
-  color: $pink;
+  // mix-blend-mode: difference;
 }
 
 header {
@@ -98,16 +99,16 @@ header {
 
 section {
   height: calc(100vh - 6em);
-  background-color: $pink;
+  background-color: $darkgray;
   display: flex;
   flex-direction: column;
   padding: 3em 0;
   scroll-snap-align: center;
 }
 
-section:nth-child(2n + 2) {
-  background-color: $darkgray;
-}
+// section:nth-child(2n + 2) {
+//   background-color: $darkgray;
+// }
 
 .section--loading {
   background-color: $darkgray;
@@ -165,9 +166,13 @@ section:nth-child(2n + 2) {
 }
 
 .typist--container {
-  background-color: #262C33;
+  // background-color: #262C33;
   color: white;
   padding: 1em;
+}
+
+.typist--indented {
+  margin-left: 1em;
 }
 
 .pink {

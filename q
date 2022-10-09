@@ -1,0 +1,15 @@
+* [31m0ace7cb[m -[33m (HEAD -> main)[m Update header to change color depending on background [32m(2 seconds ago) [1;34m<jeppe314>[m
+* [31m74a7335[m -[33m[m Added animation to loading hexagon and home page header [32m(21 hours ago) [1;34m<jeppe314>[m
+* [31mcedf686[m -[33m[m Added simple loading page, yet to animate [32m(22 hours ago) [1;34m<jeppe314>[m
+* [31m4ae613a[m -[33m (origin/main)[m New files added [32m(3 days ago) [1;34m<jeppe314>[m
+* [31m80671fe[m -[33m[m Addad contact page [32m(4 days ago) [1;34m<jeppe314>[m
+* [31m119afc2[m -[33m[m Some changes [32m(5 days ago) [1;34m<jeppe314>[m
+* [31m58d8e09[m -[33m[m Dabbling around with svgs [32m(5 days ago) [1;34m<jeppe314>[m
+* [31mfc86681[m -[33m[m Some changes, worked on header (in mobile view) and applied smooth scrolling with snapping [32m(5 days ago) [1;34m<jeppe314>[m
+* [31mff6880b[m -[33m[m Vertical hamburger bar to the right [32m(6 days ago) [1;34m<jeppe314>[m
+* [31m38f9d6d[m -[33m[m Small changes [32m(6 days ago) [1;34m<jeppe314>[m
+* [31m70e03c0[m -[33m[m Started working on hamburger menu, no functionality yet [32m(6 days ago) [1;34m<jeppe314>[m
+* [31m6d4f19a[m -[33m[m Installed sass [32m(6 days ago) [1;34m<jeppe314>[m
+* [31m2bf2a98[m -[33m[m Added section classes and temporary bg-colors [32m(6 days ago) [1;34m<jeppe314>[m
+* [31m418ff35[m -[33m[m First commit [32m(6 days ago) [1;34m<jeppe314>[m
+* [31m08b551d[m -[33m[m Initialize project using Create React App [32m(6 days ago) [1;34m<jeppe314>[m
