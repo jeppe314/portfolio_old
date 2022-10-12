@@ -2,11 +2,11 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 html,
 body {
-  background-color: #26262d;
   color: #3e99ec;
 }
 
@@ -33,6 +33,9 @@ body {
   overflow-y: scroll;
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
+  background-size: 400% 400%;
+  animation: gradient 25s ease infinite;
+  background-image: linear-gradient(-45deg, #26262d, #17171c, #444455, #2e2e38, #26262d);
 }
 
 .App::-webkit-scrollbar {
@@ -132,8 +135,7 @@ header {
 }
 
 section {
-  height: calc(100vh - 4em);
-  background-color: #26262d;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   padding: 3em 0 0 0;
@@ -174,7 +176,8 @@ section {
 }
 
 .title {
-  padding: 0 0 0 1em;
+  padding: 2em 0 0 2em;
+  text-align: left;
 }
 
 .section--about {
@@ -183,7 +186,7 @@ section {
 }
 
 .typist--container {
-  background: linear-gradient(180deg, rgb(38, 38, 45) 0%, rgb(46, 52, 59) 15%, rgb(46, 52, 59) 85%, rgb(38, 38, 45) 100%);
+  backdrop-filter: blur(6px);
   height: 35vh;
   color: white;
   padding: 1em 1em;
@@ -234,6 +237,39 @@ section {
 .section--projects {
   justify-content: center;
   align-items: center;
+}
+
+.section--contact {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contact--form {
+  width: 100%;
+  margin: 1em 0;
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  grid-gap: 0.5em;
+  font-size: 1.5em;
+  border-radius: 10px;
+  padding: 1em;
+}
+
+.contact--form input,
+textarea {
+  padding: 0.4rem 1rem;
+  border: none;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.515);
+  font-weight: bold;
+  border: 2px solid rgba(0, 0, 0, 0.688);
+  min-height: 2em;
+  color: rgb(204, 214, 255);
+}
+
+.contact--form textarea {
+  min-height: 4em;
+  width: 100%;
 }
 
 /*ANIMATION KEYFRAMES*/
@@ -289,6 +325,17 @@ section {
   }
   to {
     opacity: 0;
+  }
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
   }
 }
 

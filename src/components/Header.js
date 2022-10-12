@@ -3,7 +3,7 @@ import GitHubIcon from "@mui/icons-material/GitHub"
 import LinkedInIcon from "@mui/icons-material/LinkedIn"
 import MenuIcon from "@mui/icons-material/Menu"
 import CloseIcon from "@mui/icons-material/Close"
-import {Turn as Hamburger} from "hamburger-react"
+import { Turn as Hamburger } from "hamburger-react"
 
 export default function Header() {
   const [isOpen, setOpen] = useState(false)
@@ -25,12 +25,7 @@ export default function Header() {
         <h3>&lt;JL></h3>
       </div>
       <div className="header--right">
-        {/* {showMenu ? (
-          <CloseIcon fontSize="medium" onClick={() => toggleMenu()} />
-        ) : (
-          <MenuIcon fontSize="medium" onClick={() => toggleMenu()} />
-        )} */}
-        <Hamburger toggled={isOpen} toggle={setOpen} size={20}/>
+        <Hamburger toggled={isOpen} toggle={setOpen} size={20} />
       </div>
     </header>
   )
