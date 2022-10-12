@@ -159,7 +159,7 @@ section {
 
 .title {
   padding: 2em 0 0 2em;
-  text-align:left;
+  text-align: left;
 }
 
 .home--avatar {
@@ -181,11 +181,9 @@ section {
   //   rgb(46, 52, 59) 85%,
   //   rgba(38, 38, 45, 1) 100%
   // );
-  backdrop-filter: blur(6px);
   height: 35vh;
   color: white;
   padding: 1em 1em;
-  // height:40vh;
 }
 
 .indented {
@@ -257,7 +255,7 @@ textarea {
   padding: 0.4rem 1rem;
   border: none;
   border-radius: 10px;
-  background-color: rgba(0, 0, 0, 0.515);
+  background-color: $tuna;
   font-weight: bold;
   border: 2px solid rgba(0, 0, 0, 0.688);
   min-height: 2em;
