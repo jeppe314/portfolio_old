@@ -5,9 +5,8 @@ import { useInView } from "react-intersection-observer"
 import ArrowDown from "../components/ArrowDown"
 
 export default function About({ showTypist }) {
-
   const { ref, inView, entry } = useInView({
-    threshold: 0,
+    threshold: 0.1,
     triggerOnce: true,
     delay: 1000,
   })
